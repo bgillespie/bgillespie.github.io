@@ -1,1 +1,0 @@
-# bgillespie.github.io
