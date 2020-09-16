@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Crates You Should Know - Brian Gillespie</title>
+    
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content=""/>
+
+    <meta property="og:title" content="
+     -&nbsp;Crates You Should Know" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https:&#x2F;&#x2F;bgillespie.github.io&#x2F;cysk&#x2F;"/>
+    <meta property="og:description" content="High quality Rust crates"/>
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;bgillespie.github.io&#x2F;style.css">
+    <link rel="stylesheet" href=" https:&#x2F;&#x2F;bgillespie.github.io&#x2F;color&#x2F;orange.css">
+    
+</head>
+    <body>
+        <div class="container full">
+<header class="header">
+    <div class="header__inner">
+        <div class="header__logo">
+            <a href="&#x2F;">
+    <div class="logo">
+        bjg
+    </div>
+</a>
+        </div>
+        <div class="menu-trigger">menu</div>
+    </div>
+    
+    <nav class="menu">
+        <ul class="menu__inner menu__inner--desktop">
+            
+            
+                    <li>
+                        <a href="https:&#x2F;&#x2F;bgillespie.github.io&#x2F;about">about</a>
+                    </li>
+                
+                    <li>
+                        <a href="https:&#x2F;&#x2F;bgillespie.github.io&#x2F;contact">contact</a>
+                    </li>
+                
+            </ul>
+
+        <ul class="menu__inner menu__inner--mobile">
+            
+        <li>
+            <a href="https:&#x2F;&#x2F;bgillespie.github.io&#x2F;about">about</a>
+        </li>
+        <li>
+            <a href="https:&#x2F;&#x2F;bgillespie.github.io&#x2F;contact">contact</a>
+        </li>
+        </ul>
+    </nav>
+
+    </header>
+<div class="content"><div class="post">
+    <h1 class="post-title">
+        <a href="https:&#x2F;&#x2F;bgillespie.github.io&#x2F;cysk&#x2F;">Crates You Should Know</a>
+    </h1>
+    
+    
+    <div class="post-meta">
+        <span class="post-date"></span>
+
+        <span class="post-author"></span>
+    </div>
+
+
+    
+
+    <div class="post-content">
+        <p>Some of these from <a href="https://www.reddit.com/r/rust/comments/hat5bt/what_are_your_favorite_better_than_std_crates/">this Reddit thread</a>.</p>
+<h2 id="libraries">Libraries</h2>
+<h3 id="niceties">Niceties</h3>
+<ul>
+<li><a href="https://crates.io/crates/anyhow">anyhow</a> - Easy idiomatic error handling.</li>
+<li><a href="https://crates.io/crates/thiserror">thiserror</a> - A convenient derive macro for the standard library's std::error::Error trait.</li>
+<li><a href="https://crates.io/crates/lazy_static">lazy_static</a></li>
+</ul>
+<h3 id="data-structures">Data structures</h3>
+<ul>
+<li><a href="https://crates.io/crates/itertools">itertools</a> - Extra iterator adaptors, iterator methods, free functions, and macros.</li>
+<li><a href="https://crates.io/crates/boolinator">boolinator</a> - Provides the Boolinator trait, which lets you use Option and Result-style combinators with bools.</li>
+<li><a href="https://crates.io/crates/bytes">bytes</a> - A utility library for working with bytes.</li>
+<li><a href="https://crates.io/crates/chrono">chrono</a> - Date and time library.</li>
+<li><a href="https://crates.io/crates/dashmap">dashmap</a> - Concurrent map.</li>
+<li><a href="https://crates.io/crates/regex">regex</a> - Parsing, compiling, and executing regular expressions.</li>
+<li><a href="https://crates.io/crates/slice_deque">slice-deque</a> - A double-ended queue that Derefs into a slice, also known as a ring buffer or circular buffer.</li>
+</ul>
+<h3 id="system-tools">System tools</h3>
+<ul>
+<li><a href="https://crates.io/crates/nix">nix</a> - Rust bindings to *nix APIs.</li>
+<li><a href="https://crates.io/crates/winapi">winapi</a> - Rust bindings to Windows APIs.</li>
+<li><a href="https://crates.io/crates/socket2">socket2</a> - Utilities for handling sockets.</li>
+</ul>
+<h3 id="input-output">Input / Output</h3>
+<ul>
+<li><a href="https://crates.io/crates/serde">serde</a> - A framework for serializing and deserializing data structures efficiently and generically.
+<ul>
+<li><a href="https://crates.io/crates/serde_json">serde-json</a></li>
+</ul>
+</li>
+<li><a href="https://crates.io/crates/structopt">structopt</a> - Parse command line arguments by defining a struct.</li>
+<li><a href="https://crates.io/crates/clap">clap</a></li>
+</ul>
+<h3 id="logging-debugging-observability">Logging, debugging, observability</h3>
+<ul>
+<li><a href="https://crates.io/crates/log">log</a></li>
+<li><a href="https://crates.io/crates/fern">fern</a> - Simple, efficient logging.</li>
+<li><a href="https://crates.io/crates/tracing">tracing</a> - A framework for instrumenting Rust programs to collect structured, event-based diagnostic information.</li>
+</ul>
+<h3 id="async">Async</h3>
+<ul>
+<li><a href="https://crates.io/crates/crossbeam">crossbeam</a> - A set of tools for concurrent programming.</li>
+<li><a href="https://crates.io/crates/simple-mutex">simple-mutex</a> - More efficient than std::sync::Mutex and simpler than parking_lot::Mutex.</li>
+<li><a href="https://crates.io/crates/parking_lot">parking_lot</a> - Smaller, faster, more flexible synchronization primitives than those in <code>std</code>.</li>
+<li><a href="https://crates.io/crates/rayon">rayon</a> - Data parallelism library.</li>
+<li><a href="https://crates.io/crates/flume">flume</a> - An MPMC multi producer, multi consumer channel.</li>
+<li><a href="https://crates.io/crates/futures">futures</a> - Providing the foundations for asynchronous programming.</li>
+<li><a href="https://crates.io/crates/tokio">tokio</a> - A runtime for writing reliable, asynchronous, and slim applications.</li>
+<li><a href="https://crates.io/crates/async-std">async-std</a> - An async version of std. It provides all the interfaces you are used to, but in an async version and ready for Rust's async/await syntax.</li>
+<li><a href="https://crates.io/crates/ryu">ryu</a> - Quickly convert floating point numbers to decimal strings.</li>
+</ul>
+<h2 id="cli-tools">CLI tools</h2>
+<ul>
+<li><a href="https://github.com/ogham/exa">exa</a> - Replacement for <code>ls</code>.</li>
+<li><a href="https://github.com/sharkdp/bat">bat</a> - <code>cat</code> replacement.</li>
+<li><a href="https://github.com/sharkdp/fd">fd</a> - <code>find</code> replacement.</li>
+<li><a href="https://github.com/BurntSushi/ripgrep">ripgrep</a> - <code>grep</code> replacement.</li>
+<li><a href="https://github.com/chmln/sd">sd</a> - <code>sed</code> replacement.</li>
+<li><a href="https://github.com/bootandy/dust">dust</a> - <code>du</code> replacement.</li>
+<li><a href="https://github.com/cjbassi/ytop">ytop</a> - <code>top</code> replacement.</li>
+<li><a href="https://github.com/dalance/procs">procs</a> - <code>ps</code> replacement.</li>
+<li><a href="https://github.com/imsnif/bandwhich">bandwhich</a> - <code>iotop</code> replacement.</li>
+<li><a href="https://github.com/sharkdp/hyperfine">hyperfine</a> - <code>time</code> replacement.</li>
+<li><a href="https://github.com/XAMPPRocky/tokei">tokei</a> - Counts lines of code in a codebase, SLOC, plaintext, language code etc.</li>
+<li><a href="https://crates.io/crates/flamegraph">flamegraph</a> - Code profiler. Flamegraph generator with additional support for Cargo projects. It can be used to profile anything, not just Rust projects!</li>
+</ul>
+<h2 id="cargo-plugins">Cargo plugins</h2>
+<ul>
+<li><a href="https://crates.io/crates/cargo-geiger">cargo-geiger</a> - detects <code>unsafe</code> usages in crate and its dependencies.</li>
+<li><a href="https://github.com/killercup/cargo-edit">cargo-edit</a> - manage create dependencies in <code>Cargo.toml</code>.</li>
+<li><a href="https://github.com/nabijaczleweli/cargo-update">cargo-upgrade</a> - upgrade cargo-installed executables.</li>
+</ul>
+<h2 id="other">Other</h2>
+<ul>
+<li><a href="https://github.com/rust-lang/rustfmt">rustfmt</a> - Standard formatting for Rust code.</li>
+<li><a href="https://github.com/rust-lang/rust-clippy">clippy</a> - Linter for Rust code.</li>
+<li><a href="https://github.com/google/evcxr">Evcxr</a></li>
+</ul>
+
+    </div>
+    
+    
+</div></div>
+            
+    <div class="pagination">
+        <div class="pagination__buttons">
+            </div>
+    </div>
+<footer class="footer">
+                    <div class="footer__inner"><div class="copyright">
+            <span>© 2020 <a href="https://github.com/ejmg/zerm">zerm</a> :: Powered by <a href="https://www.getzola.org/">Zola</a></span>
+            <span>:: Theme made by <a href="https://github.com/ejmg">ejmg</a></span>
+        </div>
+    <script type="text/javascript" src="https:&#x2F;&#x2F;bgillespie.github.io&#x2F;assets&#x2F;js&#x2F;main.js"></script>
+</div>
+                    
+
+                </footer></div>
+    </body>
+</html>
