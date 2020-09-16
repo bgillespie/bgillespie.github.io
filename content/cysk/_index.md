@@ -1,7 +1,12 @@
 +++
 title = "Crates You Should Know"
+description="High quality Rust crates"
 date = 2020-09-16
-template = "cysk.html"
+
+[taxonomies]
+tags = ["rust", "crates", "cargo"]
+categories = ["programming"]
+
 +++
 
 Some of these from [this Reddit thread](https://www.reddit.com/r/rust/comments/hat5bt/what_are_your_favorite_better_than_std_crates/).
